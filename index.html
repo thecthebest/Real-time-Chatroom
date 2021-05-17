@@ -50,6 +50,30 @@
         <div class="update-mssg"></div>
     </form>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyAo23m0rFq60WTXfvWzyId8zjTWw8ixjCA",
+        authDomain: "udemy-b40bb.firebaseapp.com",
+        projectId: "udemy-b40bb",
+        storageBucket: "udemy-b40bb.appspot.com",
+        messagingSenderId: "393840331154",
+        appId: "1:393840331154:web:56ee9c01f801d7ee9a194b",
+        measurementId: "G-7K7QB7XN4K"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    </script>
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/app.js"></script>
