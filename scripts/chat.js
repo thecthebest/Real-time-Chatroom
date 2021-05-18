@@ -37,10 +37,10 @@ class Chatsroom {
                 snapshot.docChanges().forEach((change) => {
                     // Listen for only added type of change
                     if (change.type === "added") {
-                        callback("added", this.type);
+                        callback(change.doc.data());
                     }
                 });
-            })
+            });
 
     }
     // A method for changing username
